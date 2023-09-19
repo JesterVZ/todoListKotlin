@@ -13,7 +13,6 @@ import java.lang.RuntimeException
 class ShopListRecyclerAdapter: RecyclerView.Adapter<ShopListRecyclerAdapter.ShopItemViewHolder>() {
     var onLongPress: ((ShopItem) -> Unit)? = null
     var shopList = listOf<ShopItem>()
-        @SuppressLint("NotifyDataSetChanged")
         set(value) {
             field = value
             notifyDataSetChanged()
